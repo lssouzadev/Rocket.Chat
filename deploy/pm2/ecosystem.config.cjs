@@ -19,6 +19,7 @@ module.exports = {
 			env: {
 				NODE_ENV: 'production',
 				PORT: '3300',
+				BIND_IP: process.env.RC_BIND_IP || '127.0.0.1',
 				ROOT_URL: PUBLIC_URL,
 				OVERWRITE_SETTING_Site_Url: PUBLIC_URL,
 				MONGO_URL: process.env.RC_MONGO_URL || 'mongodb://127.0.0.1:27017/rocketchat?replicaSet=rs0',
